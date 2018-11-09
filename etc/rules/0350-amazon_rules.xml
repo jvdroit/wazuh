@@ -235,7 +235,7 @@ ID: 80200 - 80499
         <group>aws_trusted_advisor_warn,</group>
     </rule>
 
-    <rule id="80502" level="3">
+    <rule id="80503" level="3">
         <if_sid>80500</if_sid>
         <field name="aws.status">OK</field>
         <description>AWS Trusted Advisor - Status $(aws.status)</description>
