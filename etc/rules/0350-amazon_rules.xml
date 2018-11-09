@@ -244,7 +244,7 @@ ID: 80200 - 80499
 
     <!-- AWS KMS (Key Management Service) -->
     <!-- Documentation: https://docs.aws.amazon.com/kms/latest/developerguide/overview.html -->
-    <rule id="80550" level="3">
+    <rule id="80510" level="3">
         <decoded_as>json</decoded_as>
         <field name="aws.source">aws.kms</field>
         <description>AWS KMS</description>
