@@ -215,28 +215,28 @@ ID: 80200 - 80499
 
     <!-- AWS Trusted Advisor -->
     <!-- Documentation: https://docs.aws.amazon.com/awssupport/latest/user/trustedadvisor.html -->
-    <rule id="80500" level="3">
+    <rule id="80480" level="3">
         <decoded_as>json</decoded_as>
         <field name="aws.source">aws.trustedadvisor</field>
         <description>AWS Trusted Advisor</description>
     </rule>
 
-    <rule id="80501" level="5">
-        <if_sid>80500</if_sid>
+    <rule id="80481" level="5">
+        <if_sid>80480</if_sid>
         <field name="aws.status">ERROR</field>
         <description>AWS Trusted Advisor - Status $(aws.status)</description>
         <group>aws_trusted_advisor_error,</group>
     </rule>
 
-    <rule id="80502" level="4">
-        <if_sid>80500</if_sid>
+    <rule id="80482" level="4">
+        <if_sid>80480</if_sid>
         <field name="aws.status">WARN</field>
         <description>AWS Trusted Advisor - Status $(aws.status)</description>
         <group>aws_trusted_advisor_warn,</group>
     </rule>
 
-    <rule id="80503" level="3">
-        <if_sid>80500</if_sid>
+    <rule id="80483" level="3">
+        <if_sid>80480</if_sid>
         <field name="aws.status">OK</field>
         <description>AWS Trusted Advisor - Status $(aws.status)</description>
         <group>aws_trusted_advisor_ok,</group>
@@ -244,7 +244,7 @@ ID: 80200 - 80499
 
     <!-- AWS KMS (Key Management Service) -->
     <!-- Documentation: https://docs.aws.amazon.com/kms/latest/developerguide/overview.html -->
-    <rule id="80510" level="3">
+    <rule id="80490" level="3">
         <decoded_as>json</decoded_as>
         <field name="aws.source">aws.kms</field>
         <description>AWS KMS</description>
